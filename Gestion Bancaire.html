@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="formulaire d'ouverture de compte de la banque du peuple"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" href="style.css"/>
+    <title>GESTION DE CLIENT</title>
+</head>
+<body>
+    <header class="topbar">
+        <img src="img/logo.png" alt="logo de la banque"/><br/>
+        <h1> Bienvenue à la banque du peuple</h1><br/>
+    <main class="corp">
+        <form name="ouverture" id="ouverture" action="Bienvenue.html" method="GET">           
+            <fieldset class="master">
+                <legend id="open">Gestion de compte</legend><br/>
+                <select name="tco" id="tco">
+                    <option value="" disabled selected>------ Veuillez choisir un type de compte ------</option>
+                    <option value="1">Compte Epargne Simple & Xeewel</option>
+                    <option value="2">Compte Courant</option>
+                    <option value="3">Compte Bloqué</option>
+                </select><br><br/>
+            <fieldset class="open1" id="open1">   
+                <legend>Informations du compte</legend> <br/>
+                <input type="text" id="numag" name="numag" placeholder="numéro de l'agence"/>
+                <input type="number" id="numco" name="numco" placeholder="numéro du compte"/><br><br/>
+                <input type="number" id="clé" name="clé" placeholder="clé du rib"/>             
+                <input type="number" id="montant" name="montant" placeholder="Montant initial"/><br><br/>
+            <div class="contrat" id="contrat"> 
+                <input type="checkbox" id="frais" name="frais" value="frais">
+                <label for="frais" id="frai">FRAIS D'OUVERTURE OBLIGATOIRE</label><br/>
+                <input type="checkbox" id="agios" name="agios" value="agios">
+                <label for="agios" id="agio">CE COMPTE NECESSITERA LE RETRAIT D'AGIOS CHAQUE 3 MOIS</label>
+            </div><br/>
+            </fieldset><br/>              
+           
+                <legend id="open">Gestion de client</legend><br/>
+                <select name="tcli" id="tcli">
+                    <option value="" disabled selected>------ Veuillez choisir un type de client ------</option>
+                    <option value="cli1">Client Particulier</option>
+                    <option value="cli2">Client Salarié</option>
+                    <option value="cli3">Entreprise</option>
+                </select><br><br/>
+            <fieldset class="open2" id="open2" >
+                <legend>Informations du client </legend><br/>             
+                <input type="text" id="nomcli" name="nomcli" placeholder="nom du client"/>               
+                <input type="text" id="precli" name="precli" placeholder="prénom du client"/><br><br/>               
+                <input type="text" id="adcli" name="adcli" placeholder="adresse du client"/>                
+                <input type="email" id="emcli" name="emcli" placeholder="email du client"/><br><br/>               
+                <input type="number" id="telcli" name="telcli" placeholder="numéro de télephone du client"/>
+                <input type="text" id="iden" name="iden" placeholder="numéro d'indentification du client"/><br><br/>
+                <input type="number" id="sal" name="sal" placeholder="le salaire du client"/>
+                <input type="text" id="prof" name="prof" placeholder="la profession du client"/><br><br/>
+            </fieldset><br/>   
+
+            <fieldset class="open3" id="open3" >
+                <legend>Informations employeur</legend><br/> 
+                <input type="text" id="rs" name="rs" placeholder="raison sociale de l'employeur"/>
+                <input type="text" id="adem" name="adem" placeholder="adresse de l'employeur"/><br><br/>                
+                <input type="text" id="nomem" name="nomem" placeholder="nom de l'employeur"/>                
+                <input type="number" id="idem" name="idem" placeholder="numéro d'identification de l'employeur"/>
+            </fieldset><br><br/>
+
+                <input type="submit" id="val" value="VALIDER"/>
+                <input type="reset" id="anu" value="ANNULER"/><br/>
+            </fieldset>
+        </form> 
+    </main><br/>
+
+    <footer class="bas">@Copyright-2020 Jeremy Simplon @Auf Dakar P3 Dev Web & Mobile</footer>
+<script type="text/javascript" src="index.js"></script>    
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+text-align:center ;
+background-color: black;
+background-size: cover;
+color: white;
+}
+
+.topbar img{
+width: 100px;
+border-radius: 30px;
+margin-top: 10px;
+float:left;
+}
+
+.topbar h1{
+   text-transform: uppercase;
+   font-style: italic;
+   background-image: url(img/h1.jpg);
+   color: white;
+   width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   border-width: 10px;
+   border-radius: 5px;
+   border-color:turquoise;
+   border-style: dashed double;
+   font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+}
+
+.master{
+ margin-left: auto;
+ margin-right: auto;
+ width: fit-content;
+ border-radius: 40px;
+ border-width:4px ;
+ border-color:black;
+ box-shadow:2px 2px 2px 2px cyan;
+ max-width: 100%;
+ background-image: url(img/ma3.jpg);
+}
+
+.open1,.open2,.open3{
+   position: relative;
+display: none;
+ border-radius: 30px;
+ border-width:2px ;
+ border-color:black;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+#open{
+   font-weight: bold;
+   font-style: italic;
+   font-size:22px;
+   text-transform: uppercase;
+   color: turquoise;
+   border-radius: 5px;
+}
+
+.corp legend{
+   position: relative;
+   font-family: cursive;
+   font-size: 19px;
+   color: white;
+}
+
+.corp input,select{
+   position: relative;
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 300px;
+   height: 30px;
+   border-radius: 30px;
+   border-width:3px ;
+   border-color: turquoise;
+   text-align: center;
+}
+#contrat input,label{
+   display: none;
+   width: 100px;
+   color:black;
+   font-weight: bold;
+}
+
+#val{
+   width: 100px;
+   height: 30px;
+   border-radius: 20px;
+}
+
+#anu{
+   width: 100px;
+   height: 30px;
+   border-radius: 20px;
+}
+
+#val:hover{
+   background:rgb(77, 219, 165);
+   color:white;
+   font-weight: bold;
+}
+
+#anu:hover{
+   background:rgb(219, 100, 100);
+   color:white;
+   font-weight: bold;
+   font-family: cursive;
+}
+
+.bas{
+   color:white;
+   font-weight: lighter;
+   font-size: x-large;
+}
+
+#ins h4{
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+  font-style: italic;
+  
+  
+
+}
