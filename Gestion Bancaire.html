@@ -13,25 +13,25 @@
         <img src="img/logo.png" alt="logo de la banque"/><br/>
         <h1> Bienvenue à la banque du peuple</h1><br/>
     <main class="corp">
-        <form name="ouverture" id="ouverture" action="Bienvenue.html" method="GET">           
+        <form name="ouverture" id="ouverture" action="" method="GET">           
             <fieldset class="master">
                 <legend id="open">Gestion de compte</legend><br/>
                 <select name="tco" id="tco">
                     <option value="" disabled selected>------ Veuillez choisir un type de compte ------</option>
-                    <option value="1">Compte Epargne Simple & Xeewel</option>
+                    <option value="1">Compte Epargne</option>
                     <option value="2">Compte Courant</option>
                     <option value="3">Compte Bloqué</option>
                 </select><br><br/>
             <fieldset class="open1" id="open1">   
                 <legend>Informations du compte</legend> <br/>
-                <input type="text" id="numag" name="numag" placeholder="numéro de l'agence"/>
-                <input type="number" id="numco" name="numco" placeholder="numéro du compte"/><br><br/>
-                <input type="number" id="clé" name="clé" placeholder="clé du rib"/>             
-                <input type="number" id="montant" name="montant" placeholder="Montant initial"/><br><br/>
+                <input type="text" id="numag" name="numag" placeholder="numéro de l'agence" required/>
+                <input type="number" id="numco" name="numco" placeholder="numéro du compte" required/><br><br/>
+                <input type="number" id="clé" name="clé" placeholder="clé du rib" required/>             
+                <input type="number" id="montant" name="montant" placeholder="Montant initial" required/><br><br/>
             <div class="contrat" id="contrat"> 
-                <input type="checkbox" id="frais" name="frais" value="frais">
+                <input type="checkbox" id="frais" name="frais" value="frais" required/>
                 <label for="frais" id="frai">FRAIS D'OUVERTURE OBLIGATOIRE</label><br/>
-                <input type="checkbox" id="agios" name="agios" value="agios">
+                <input type="checkbox" id="agios" name="agios" value="agios" required/>
                 <label for="agios" id="agio">CE COMPTE NECESSITERA LE RETRAIT D'AGIOS CHAQUE 3 MOIS</label>
             </div><br/>
             </fieldset><br/>              
@@ -51,16 +51,16 @@
                 <input type="email" id="emcli" name="emcli" placeholder="email du client"/><br><br/>               
                 <input type="number" id="telcli" name="telcli" placeholder="numéro de télephone du client"/>
                 <input type="text" id="iden" name="iden" placeholder="numéro d'indentification du client"/><br><br/>
-                <input type="number" id="sal" name="sal" placeholder="le salaire du client"/>
-                <input type="text" id="prof" name="prof" placeholder="la profession du client"/><br><br/>
+                <input type="number" id="sal" name="sal" placeholder="le salaire du client" required/>
+                <input type="text" id="prof" name="prof" placeholder="la profession du client" required/><br><br/>
             </fieldset><br/>   
 
             <fieldset class="open3" id="open3" >
                 <legend>Informations employeur</legend><br/> 
-                <input type="text" id="rs" name="rs" placeholder="raison sociale de l'employeur"/>
-                <input type="text" id="adem" name="adem" placeholder="adresse de l'employeur"/><br><br/>                
-                <input type="text" id="nomem" name="nomem" placeholder="nom de l'employeur"/>                
-                <input type="number" id="idem" name="idem" placeholder="numéro d'identification de l'employeur"/>
+                <input type="text" id="rs" name="rs" placeholder="raison sociale de l'employeur" required/>
+                <input type="text" id="adem" name="adem" placeholder="adresse de l'employeur" required/><br><br/>                
+                <input type="text" id="nomem" name="nomem" placeholder="nom de l'employeur" required/>                
+                <input type="number" id="idem" name="idem" placeholder="numéro d'identification de l'employeur" required/>
             </fieldset><br><br/>
 
                 <input type="submit" id="val" value="VALIDER"/>
